@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day1 sisi client</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <button>Log out</button>
+        </header>
+
+        <div class="main">
+            <aside>
+                <h1>Admin panel</h1>
+                <nav>
+                    <ul style="text-decoration: none;">
+                        <li><a href="">Dashboard</a></li>
+                        <li><a href="">Users</a></li>
+                        <li><a href="">Settings</a></li>
+                    </ul>
+                </nav>
+            </aside>
+    
+            <div class="content">
+                <h2>Daftar users</h2>
+                <button id="btn-Tambah">Tambah mhs</button>
+                <table style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <td>No.</td>
+                            <td>NIM</td>
+                            <td>Nama</td>
+                            <td>Action</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>A11.2022.11111</td>
+                            <td>adit</td>
+                            <td>
+                                <button onclick="Edit1()">Edit</button>
+                                <button onclick="Delete()">Delete</button>   
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>A11.2022.22222</td>
+                            <td>berco</td>
+                            <td>
+                                <button onclick="Edit1()">Edit</button>
+                                <button onclick="Delete()">Delete</button>   
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>A11.2022.33333</td>
+                            <td>dappa</td>
+                            <td>
+                                <button onclick="Edit1()">Edit</button>
+                                <button onclick="Delete()">Delete</button>   
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <footer>
+            &COPY;2024 Admin Dashboard
+        </footer>
+
+        <div id="modalTambah" class="modal-overlay" style="display: none;">
+            <div class="modal">
+                <h2>Tambah mahasiswa</h2>
+                <form action="">
+                    <label for="">Nama: </label>
+                    <input type="text" style="width: 95%;">
+                    <div>
+                        <button>Batal</button>
+                        <button>Simpan</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="modalEdit" class="modal-overlay" style="display: none;">
+            <div class="modal">
+                <h2>Edit mahasiswa</h2>
+                <form action="">
+                    <label for="">Nama: </label>
+                    <input type="text" style="width: 95%;">
+                    <div>
+                        <button>Batal</button>
+                        <button>Simpan</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="modalDelete" class="modal-overlay-delete" style="display: none;">
+            <div class="delete">
+                <h3>Apakah kamu yakin mau delete user ini ?</h3>
+                <hr>
+                    <div>
+                        <button>Cencel</button>
+                        <button onclick="confirm()">OK</button>
+                    </div>
+            </div>
+        </div>
+
+        <div id="modalConfirm" class="modal-overlay-confirm" style="display: none;">
+            <div class="confirm">
+                <h3>User berhasil di delete!</h3>
+                <hr>
+                <form action="">
+                    <div>
+                        <button>Close</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+header{
+    background-color: #2d2d2d;
+    text-align: right;
+    padding: 10px;
+}
+
+header button{
+    padding: 5px;
+}
+
+.main{
+    display: flex; 
+    flex: 1;
+}
+
+aside{
+    padding: 20px 10px 10px 10px;
+    width: 200px;
+    background-color: #2d2d2d;
+    color: white;
+}
+
+aside nav{
+    text-decoration: underline;
+}
+
+ul{
+    padding: 19px;
+    height: 500px;
+    text-decoration: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.content{
+    padding: 20px;
+    flex: 1 ;
+}
+
+.content h2{
+    margin-bottom: 20px;
+}
+
+table{
+    width: 100%;
+}
+
+table, th, td{
+    border-collapse: collapse;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+thead td{
+    font-weight: bold;
+}
+
+td button:first-child{
+    margin-right: 10px;
+}
+
+footer{
+    padding: 10px;
+    background-color: #2d2d2d;
+    color: white;
+    text-align: center;
+}
+
+.modal-overlay{
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-overlay h2{
+    padding: 20px 0;
+}
+
+.modal-overlay .modal{
+    width: 500px;
+    max-width: 100%;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: whitesmoke;
+    align-items: center;
+}
+
+.modal-overlay-delete{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete {
+    background: white;
+    border-radius: 8px;
+    width: 45%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.delete h3 {
+    padding: 10px 15px;
+    text-align: left;
+    font-size: 18px;
+    color: #6b6b6b;
+    font-weight: 300;
+}
+
+.delete hr{
+    border: none;
+    border-top: 1.5px solid #ddd;
+    margin: 0;
+    width: 100%;
+}
+
+.delete div{
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: end;
+}
+
+.delete button {
+    padding: 0 15px 15px 15px;
+    border: none;
+    background: transparent;
+    color: #5a31f5;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.modal-overlay-confirm{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirm {
+    background: white;
+    border-radius: 8px;
+    width: 45%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.confirm h3 {
+    padding: 10px 15px;
+    text-align: left;
+    font-size: 18px;
+    color: #6b6b6b;
+    font-weight: 300;
+}
+
+.confirm form {
+    margin: 10px 0 0 0;
+}
+
+.confirm hr{
+    border: none;
+    border-top: 1.5px solid #ddd;
+    margin: 0;
+    width: 100%;
+}
+
+.confirm div{
+    display: flex;
+    justify-content: end;
+}
+
+.confirm button {
+    padding: 0 15px 15px 15px;
+    border: none;
+    background: transparent;
+    color: #5a31f5;
+    font-weight: 400;
+    cursor: pointer;
+}
